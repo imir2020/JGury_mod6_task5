@@ -9,19 +9,21 @@ import by.javagury.spring.service.CompanyService;
 import by.javagury.spring.service.UserService;
 import org.springframework.context.annotation.*;
 
-
+//@Import(ApplicationTestConfig.class)
 //@Profile("prod")
 @Configuration
-@PropertySource("classpath:app.properties")
+@PropertySource("classpath:application.properties")
 @ComponentScan(basePackages = "by.javagury.spring")
 public class ApplicationProdConfig {
 
     @Bean("userService1")
+    @Profile("prod")
     public UserService userService(){
         return new UserService(new UserRepository(), new UserMapper());
     }
 
-    @Bean("userService1")
+    @Bean("companyService1")
+    @Profile("prod")
     public CompanyService companyService(){
         return new CompanyService(new CompanyRepository(),new CompanyMapper());
     }

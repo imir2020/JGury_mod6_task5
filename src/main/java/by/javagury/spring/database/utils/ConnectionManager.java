@@ -1,7 +1,9 @@
 package by.javagury.spring.database.utils;
 
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
@@ -26,4 +28,5 @@ public class ConnectionManager {
             throw new RuntimeException(e);
         }
     }
+
 }

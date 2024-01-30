@@ -2,16 +2,17 @@ package by.javagury.spring.database.repository;
 
 import by.javagury.spring.database.entity.User;
 import by.javagury.spring.database.utils.ConnectionManager;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Optional;
-
 
 
 @ToString

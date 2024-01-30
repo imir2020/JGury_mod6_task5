@@ -5,12 +5,13 @@ import java.util.Properties;
 
 public class PropertiesUtil {
     private static final Properties PROPERTIES = new Properties();
-    private static String propertiesName = "app.properties";
+    private static  final String propertiesName = "application.properties" ;
 
     private PropertiesUtil() {
+
     }
 
-    static {
+    static  {
         loadProperties();
     }
 
@@ -27,7 +28,4 @@ public class PropertiesUtil {
         return PROPERTIES.getProperty(key);
     }
 
-    public static PropertiesUtil createInstance(){
-        return new PropertiesUtil();
-    }
 }
