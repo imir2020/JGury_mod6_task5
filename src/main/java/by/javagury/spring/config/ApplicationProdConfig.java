@@ -9,8 +9,7 @@ import by.javagury.spring.service.CompanyService;
 import by.javagury.spring.service.UserService;
 import org.springframework.context.annotation.*;
 
-//@Import(ApplicationTestConfig.class)
-//@Profile("prod")
+@Import(ApplicationTestConfig.class)
 @Configuration
 @PropertySource("classpath:application.properties")
 @ComponentScan(basePackages = "by.javagury.spring")

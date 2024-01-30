@@ -18,7 +18,6 @@ import java.util.Optional;
 @NoArgsConstructor
 @ToString
 @Setter
-@Repository
 public class CompanyRepository {
 
     private final static String FIND_BY_ID_SQL = """

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 @ToString
 @NoArgsConstructor
-@Component
 public class CompanyMapper {
 
     public CompanyDto companyToDto(Company company) {

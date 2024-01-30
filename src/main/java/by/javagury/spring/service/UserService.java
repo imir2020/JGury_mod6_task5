@@ -11,7 +11,6 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @ToString
-@Service
 public class UserService {
     private final UserRepository userRepository;
     private final UserMapper userMapper;

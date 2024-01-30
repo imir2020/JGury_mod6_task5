@@ -12,7 +12,6 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @ToString
-@Service
 public class CompanyService {
     private final CompanyRepository companyRepository;
     private final CompanyMapper companyMapper;

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @ToString
 @NoArgsConstructor
-@Component
+
 public class UserMapper {
 
     public UserDto userToDto(User user) {

@@ -23,8 +23,4 @@ public class ApplicationTestConfig {
         return new CompanyRepository();
     }
 
-    @Bean
-    public ConnectionManager connectionManager() {
-        return new ConnectionManager();
-    }
 }
